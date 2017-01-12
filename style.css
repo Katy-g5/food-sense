@@ -1,27 +1,54 @@
+/*--------------general rules--------------*/
+
 ul{
     list-style-type: none;
     padding: 0;
 }
 
-nav{
+a{
+    text-decoration: none;
+}
+
+/*----------------------------------------*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*--------------navigation area---------------*/
+
+.navigation{
     background-color: indianred;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.navigation__logo{
+    width: 160px;
+    height: 160px;
+}
+
 .navIcons{
     display: none;
+    width: 48px;
+    height: 48px;
 }
 
-.bgTags{
+.menuNav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.social{
     display: none;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-}
+/*-----------background image------------*/
 
 .bg{
     background-color: lightsalmon;
@@ -29,48 +56,72 @@ nav{
     flex-basis: 100vw;
 }
 
-.menuNav{
-    display: flex;
-    align-items: space-around;
-    order: -1;
-}
-
-.social{
+.tags{
     display: none;
 }
 
+/*-----------subscribe area------------*/
+
 .subscribe{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-color: lemonchiffon;
 }
+.subIcon{
+    width: 48px;
+    height: 48px;
+}
+
+.subscribeText{
+    display: flex;
+    align-items: center;
+}
+
+/*-----------all content here------------*/
 
 .elements{
     background-color: lightgreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .web .elements li{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
+
+.foodImg{
+    height: 168px;
+    width: 252px;
+}
+
+.underImgText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*-----------footer------------*/
 
 footer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     background-color: lightskyblue;
+    justify-content: space-between;
 }
 
 .footerMenu{
     display: flex;
-    flex-basis: 40%;
 }
 
 .socialIcons{
     display: flex;
-    flex-basis: 40%;
+}
+
+.footerSocials{
+    width: 48px;
+    height: 48px;
 }
 
 footer .footerMenu li a{
@@ -79,7 +130,77 @@ footer .footerMenu li a{
 
 footer p.copywrite{
     font-size: 10px;
-    flex-basis: 40%;
 }
+
+/*----------------------switch 530px-----------------------*/
+
+@media all and (min-width: 530px) {
+    
+/*--------------navigation area---------------*/
+    
+    .navigation{
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+    }
+    
+/*--------------all content here---------------*/
+
+    .elements{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .elements li{
+        flex-basis: 45%;
+    }
+    
+}
+
+
+/*----------------------switch 770px-----------------------*/
+
+@media all and (min-width: 770px) {
+    
+    /*--------------navigation area---------------*/
+    
+    .navIcons{
+        display: flex;
+    }
+    
+    .container .navigation .menuNav li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /*--------------background image---------------*/
+    
+    .tags{
+        display: flex;
+        flex-grow:1;
+        justify-content: space-around;
+        background-color: hotpink;
+        height: 40px;
+        align-items: center;
+    }
+    
+    /*--------------subscribe area---------------*/
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

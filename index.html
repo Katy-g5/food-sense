@@ -8,8 +8,7 @@
 </head>
 <body>
     <main class="container">
-        <nav>
-            <img class="logo" src="img/logo.jpeg" alt="logo">
+        <nav class="navigation">
             <ul class="menuNav">
                 <li><img class="navIcons" src="img/icon.png" alt="icon"><a href="#">Tastemakers</a></li>
                 <li><img class="navIcons" src="img/icon.png" alt="icon"><a href="#">Blog</a></li>
@@ -17,6 +16,7 @@
                 <li><img class="navIcons" src="img/icon.png" alt="icon"><a href="#">Contribute</a></li>
                 <li><img class="navIcons" src="img/icon.png" alt="icon"><a href="#">About</a></li>
             </ul>
+            <img class="navigation__logo" src="img/logo.jpeg" alt="logo">
             <div class="social">
                 <h2>Latest Tweet</h2>
                 <a href="#"><a href="#">Join the conversation</a>
@@ -28,54 +28,76 @@
             </div>
         </nav>
         <div class="bg"></div>
-        <ul class="bgTags">
+        <ul class="tags">
                 <li><a href="#">Tastemakers</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">The A-List</a></li>
                 <li><a href="#">Contribute</a></li>
         </ul>
         <div class="subscribe">
+           <div class="subscribeText">
             <img class="subIcon" src="img/icon.png" alt="icon">
             <p class="subPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eveniet harum reprehenderit consequatur.</p>
+            </div>
             <form><input type="text"><button type="button">Subscribe</button></form>
                 </div>
                 <div class="web">
             <ul class="elements">
-                <li><img src="img/picOne.jpg" alt="one"><a class="headlines" href="#">2012's Best Summer Cookbooks</a>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
-                <p class="date">May 23, 2012 /</p>
-                <a class="read" href="#">Read >></a>
+                <li>
+                    <div class="pictures"><img class="foodImg" src="img/picOne.jpg" alt="one"></div>
+                    <div class="underImgText">
+                        <a class="headlines" href="#">2012's Best Summer Cookbooks</a>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
+                        <p class="date">May 23, 2012 /</p>
+                        <a class="read" href="#">Read >></a>
+                    </div>
                 </li>
-                <li><img src="img/picTwo.jpg" alt="two"><a class="headlines" href="#">How to Make Vegetable Chips</a>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
-                <p class="date">May 17, 2012 /</p>
-                <a class="read" href="#">Read >></a>
+                <li>
+                    <div class="pictures"><img class="foodImg" src="img/picTwo.jpg" alt="one"></div>
+                    <div class="underImgText">
+                        <a class="headlines" href="#">How to Make Vegetable Chips</a>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
+                        <p class="date">May 23, 2012 /</p>
+                        <a class="read" href="#">Read >></a>
+                    </div>
                 </li>
-                <li><img src="img/picThree.png" alt="three"><a class="headlines" href="#">Join us on Pinterest!</a>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
-                <p class="date">May 16, 2012 /</p>
-                <a class="read" href="#">Read >></a>
+                <li>
+                    <div class="pictures"><img class="foodImg" src="img/picThree.png" alt="one"></div>
+                    <div class="underImgText">
+                        <a class="headlines" href="#">Join Us on Pinterest!</a>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
+                        <p class="date">May 23, 2012 /</p>
+                        <a class="read" href="#">Read >></a>
+                    </div>
                 </li>
-                <li><img src="img/picFour.jpg" alt="four"><a class="headlines" href="#">Recipes from a Sunday Supper</a>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
-                <p class="date">May 15, 2012 /</p>
-                <a class="read" href="#">Read >></a>
+                <li>
+                    <div class="pictures"><img class="foodImg" src="img/picOne.jpg" alt="one"></div>
+                    <div class="underImgText">
+                        <a class="headlines" href="#">Recipes from a Sunday Supper</a>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at veniam, quaerat optio enim error dolorum voluptatum dolores iure aut.</p>
+                        <p class="date">May 23, 2012 /</p>
+                        <a class="read" href="#">Read >></a>
+                    </div>
                 </li>
             </ul>
                 </div>
     </main>
     <footer>
+       <div class="footerText">
         <ul class="footerMenu">
             <li><a href="#">Privacy</a>|</li>
             <li><a href="#">Tearms of Use</a>|</li>
             <li><a href="#">Contact</a></li>
         </ul>
         <p class="copywrite">© 2017 Food Sense, all rights reserved.</p>
+        </div>
+        <div class="footerPictures">
         <ul class="socialIcons">
             <li><a href="#"><img class="footerSocials" src="img/icon.png" alt="mediaIcon"></a></li>
             <li><a href="#"><img class="footerSocials" src="img/icon.png" alt="mediaIcon"></a></li>
             <li><a href="#"><img class="footerSocials" src="img/icon.png" alt="mediaIcon"></a></li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>

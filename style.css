@@ -59,12 +59,16 @@ a{
 .tags{
     display: none;
 }
+.tagsText{
+    display:none;
+}
 
 /*-----------subscribe area------------*/
 
 .subscribe{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: lemonchiffon;
 }
 .subIcon{
@@ -75,6 +79,10 @@ a{
 .subscribeText{
     display: flex;
     align-items: center;
+}
+form{
+    display: flex;
+    height: 30px;
 }
 
 /*-----------all content here------------*/
@@ -145,6 +153,12 @@ footer p.copywrite{
         
     }
     
+/*----------------subscribe area------------*/
+    input{
+        display: flex;
+        flex-basis: 60%;
+    }
+    
 /*--------------all content here---------------*/
 
     .elements{
@@ -187,11 +201,76 @@ footer p.copywrite{
     }
     
     /*--------------subscribe area---------------*/
+    .subscribe{
+        flex-direction: row;
+    }
+    .subscribeText{
+        flex-grow: 1;
+    }
     
+    /*----------------all content------------*/
     
+    .web .elements li{
+        flex-basis: 23%;
+    }
+    .foodImg{
+        width: 170px;
+        height: 100px;
+    }
     
 }
 
+/*----------------------switch 950px-----------------------*/
+
+@media all and (min-width: 950px) {
+    
+    /*----------------top navigation------------*/
+    .navigation{
+        flex-direction: column;
+        flex-basis: 15%;
+    }
+    .menuNav{
+        flex-direction: column;
+    }
+    .navigation__logo{
+        order: -1;
+    }
+    .tweets{
+        display: flex;
+        flex-direction: column;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+    }
+    
+    .socialText{
+        font-size: 12px;
+    }
+   /*----------------all content------------*/
+    
+    .allContent{
+        flex-basis: 70%;
+    }
+    
+}
+
+/*----------------------switch 1100px-----------------------*/
+
+@media all and (min-width: 1100px) {
+    .tags{
+        height: 80px;
+        align-items: flex-start;
+    }
+    .tagsText{
+        display:flex;
+        font-size: 12px;
+        color: blue;
+    }
+    
+    
+}
 
 
 
